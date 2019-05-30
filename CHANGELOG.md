@@ -1,3 +1,6 @@
+## 3.4.2
+ - Added `decorate()` for stateful codecs before enqueuing the event
+
 ## 3.4.1
  - Fixed link formatting for input type (documentation)
 
