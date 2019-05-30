@@ -1,3 +1,9 @@
+The original Logstash Plugin for S3 contains some bugs which have been fixed in this fork.
+
+List of Bugs fixed:
+- When using stateful codecs such as `multiline`, the `add_field`, `tags` and `type` options are ineffective because plugin didn't call the `decorate()` method on the event before enqueuing it. PR [#173](https://github.com/logstash-plugins/logstash-input-s3/pull/173)
+
+
 # Logstash Plugin
 
 [![Travis Build Status](https://travis-ci.org/logstash-plugins/logstash-input-s3.svg)](https://travis-ci.org/logstash-plugins/logstash-input-s3)
